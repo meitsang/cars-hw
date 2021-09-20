@@ -7,7 +7,7 @@ function Home(){
   return (
     <MainLayout>
       <CarsList />
-      <DriversList/>
+      <DriversList />
     </MainLayout>
   );
 }

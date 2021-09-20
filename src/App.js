@@ -31,7 +31,7 @@ function App() {
               <Route path={`/cars/add`} component={AddCar} />
               <Route path={`/cars/update/:id`} component={UpdateCar} />
               <Route path={`/drivers/add`} component={AddDriver} />
-              <Route path={`/drivers/update`} component={UpdateDriver} />
+              <Route path={`/drivers/update/:id`} component={UpdateDriver} />
               <Route path="/spectators" component={Spectators} />
               <Route path="*" component={NotFound} />
             </Switch>

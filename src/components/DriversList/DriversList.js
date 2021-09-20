@@ -24,7 +24,7 @@ function DriversList() {
             {drivers.map(({ _id, firstname, lastname, age, email }) => (
               <li key={_id} className="drivers-list-item">
                 <p>
-                  {firstname} {lastname} (age: {age} email: {email})
+                    {firstname} {lastname} (age: {age} email: {email})
                 </p>
                 <Link to={`/drivers/update/${_id}`} className="update-link">
                   Update

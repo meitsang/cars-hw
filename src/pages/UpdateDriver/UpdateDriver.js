@@ -6,7 +6,7 @@ import { DriversContext } from './../../contexts/DriversContext';
 import ErrorBoundary from './../../components/ErrorBoundary/ErrorBoundary';
 import MainLayout from '../../layouts/MainLayout';
 
-// import "./UpdateCar.css";
+import "./UpdateDriver.css";
 
 function UpdateDriver() {
   let { id } = useParams();
@@ -14,7 +14,8 @@ function UpdateDriver() {
   const { drivers } = useContext(DriversContext);
   const { addToast } = useToasts();
   const driverToBeUpdated = drivers.find(({ _id }) => _id === id);
-
+  console.log('id', id);
+  
   if (!driverToBeUpdated) {
     addToast(`Error: cannot find driver with id ${id}. Redirecting...`, {
       appearance: 'error',
