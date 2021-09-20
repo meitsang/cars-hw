@@ -1,19 +1,19 @@
 import React from "react";
-import CarForm from "./../../components/CarForm/CarForm";
+import DriverForm from "./../../components/DriverForm/DriverForm";
 import ErrorBoundary  from "./../../components/ErrorBoundary/ErrorBoundary";
 import MainLayout  from '../../layouts/MainLayout';
 
-function AddCar() {
+function AddDriver() {
   return (
     <MainLayout>
         <h1 style={{
           marginInlineStart: '15px',
-        }}>Add Car</h1>
+        }}>Add Driver</h1>
         <ErrorBoundary>
-          <CarForm />
+          <DriverForm />
         </ErrorBoundary>
     </MainLayout>
   );
 }
 
-export default AddCar;
+export default AddDriver;
